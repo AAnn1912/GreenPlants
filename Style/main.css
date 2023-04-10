@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bitter', serif;
+}
+
+.container {
+    padding: 20px 10%;
+}
+
+/* Header */
+
+.header .container .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container .wrapper .logo {
+    display: flex;
+}
+
+.header .container .wrapper .logo img {
+    width: 30%;
+}
+
+.header .container .wrapper .logo span {
+    display: inline-block;
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+.header .container .wrapper .menu {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header .container .wrapper .menu a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 25px;
+    color: black;
+}
+
+.header .container .wrapper .search {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.header .container .wrapper .cart {
+
+    font-size: 22px;
+}
+
+.header .container .wrapper .cart a,
+.header .container .wrapper .search a {
+    color: #1e4808;
+}
+
+/* Carousel */
+.carousel_content {
+    display: flex;
+}
+
+.carousel_content .content_left {
+    width: 100%;
+
+}
+
+.carousel_content .content_right {
+    width: 100%;
+    text-align: center;
+}
+
+.carousel_content .content_left h1 {
+    font-size: 56px;
+    margin-top: 15%;
+    font-weight: normal;
+    word-spacing: 3px;
+}
+
+.carousel_content .content_left span {
+    color: #527851;
+    font-weight: normal;
+}
+
+.carousel_content .content_left p {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 25%;
+    padding-left: 5px;
+}
+
+.content_left .btn_buyNow {
+    border: 1px solid #1e4808;
+    padding: 12px 35px;
+    background-color: #1e4808;
+    color: white;
+    margin-top: 25px;
+}
+
+.carousel_slider_btn {
+    display: flex;
+    margin-top: 15%;
+    font-size: 40px;
+    justify-content: start;
+}
+
+.carousel_slider_btn .prev i,
+.carousel_slider_btn .next i {
+    border: 1px solid #1e4808;
+    color: white;
+    background-color: #1e4808;
+    margin-right: 15px;
+}

@@ -117,3 +117,96 @@
     background-color: #1e4808;
     margin-right: 15px;
 }
+
+.popular {
+    background-color: #e8e1d6;
+}
+
+.popular .container h3 {
+    font-size: 36px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.popular_listsItem {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+}
+
+.popular_listsItem .item .imgItem img {
+    width: 300px;
+    height: 450px;
+}
+
+.popular_listsItem .item_3 .imgItem img,
+.popular_listsItem .item_4 .imgItem img {
+    width: 100%;
+    height: 300%;
+}
+
+
+.popular_listsItem .item_3 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.popular_listsItem .item_4 {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.popular_listsItem .item {
+    background-color: white;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+.popular_listsItem .item img {
+    border: white;
+    background-color: white;
+    padding: 5px;
+}
+
+
+.popular_listsItem .item_6 img {
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+
+
+.popular_listsItem .item h3 {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.popular_listsItem .item p {
+    margin: 0 30px 0 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.popular_listsItem .item .price span {
+    display: inline-block;
+    margin: 15px 0 15px 10px;
+    color: #71956e;
+    font-weight: 500;
+}
+
+.popular_listsItem .item .price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular_listsItem .item .price .addCart {
+    border: none;
+    margin-right: 10%;
+    font-size: 25px;
+    background-color: white;
+    color: #71956e;
+}

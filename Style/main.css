@@ -8,7 +8,8 @@
 }
 
 .container {
-    padding: 20px 10%;
+    max-width: 1280px;
+    margin: auto;
 }
 
 /* Header */
@@ -115,28 +116,31 @@
     border: 1px solid #1e4808;
     color: white;
     background-color: #1e4808;
-    margin-right: 15px;
+    margin: 0 15px 35px 0;
 }
+
+/*Popular */
 
 .popular {
     background-color: #e8e1d6;
+    padding: 3% 0;
 }
 
-.popular .container h3 {
+.popular .container h1 {
     font-size: 36px;
-    font-weight: 300;
-    margin: 15px 0;
+    font-weight: 400;
+    padding-bottom: 20px;
 }
 
 .popular_listsItem {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 15px;
+    gap: 10px;
 }
 
 .popular_listsItem .item .imgItem img {
     width: 300px;
-    height: 450px;
+    height: 340px;
 }
 
 .popular_listsItem .item_3 .imgItem img,
@@ -164,6 +168,7 @@
     background-color: white;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
+    margin-left: 10px;
 }
 
 .popular_listsItem .item img {
@@ -178,6 +183,10 @@
     border-top-left-radius: 50%;
 }
 
+
+.popular_listsItem .item.item_5 p {
+    margin-bottom: 25px;
+}
 
 
 .popular_listsItem .item h3 {
@@ -209,4 +218,74 @@
     font-size: 25px;
     background-color: white;
     color: #71956e;
+}
+
+/* Banner */
+.banner {
+    padding: 2% 0;
+}
+
+.banner_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner_content .banner_title {
+    width: 45%;
+}
+
+.banner_title p:nth-child(1) {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.banner_title span {
+    color: #50d50a;
+}
+
+.banner_title p:nth-child(2) {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.banner_title button {
+    padding: 8px 22px;
+    border: 1.5px solid #50d50a;
+    color: #50d50a;
+    background-color: white;
+}
+
+.banner_content .banner_img {
+    text-align: center;
+    width: 60%;
+
+}
+
+.banner_content .banner_list {
+    width: 50%;
+    line-height: 1.6;
+}
+
+.banner_content .banner_list ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.banner_content .banner_list ul li i {
+    color: #50d50a;
+    font-weight: 800;
+    position: absolute;
+    top: 15px;
+    left: -20px;
+}
+
+.banner_content .banner_list .bx {
+    padding-right: 5px;
+    line-height: 1px;
+}
+
+.banner_content .banner_list ul li span {
+    color: #50d50a;
 }

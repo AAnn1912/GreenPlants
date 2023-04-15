@@ -21,22 +21,24 @@
 }
 
 .header .container .wrapper .logo {
-    display: flex;
+    width: 450px;
 }
 
 .header .container .wrapper .logo img {
-    width: 30%;
+    width: 15%;
+    padding-top: 15px;
 }
 
 .header .container .wrapper .logo span {
     display: inline-block;
     font-size: 32px;
     padding-top: 10px;
+    width: 15px;
 }
 
 .header .container .wrapper .menu {
     flex-grow: 1;
-    text-align: center;
+    text-align: start;
 }
 
 .header .container .wrapper .menu a {
@@ -44,11 +46,19 @@
     font-size: 20px;
     margin-left: 25px;
     color: black;
+    transition: all 0.25s;
+}
+
+.header .container .wrapper .menu a:hover {
+    color: #50d50a;
+    border-bottom: 1px solid #50d50a;
+    padding-bottom: 5px;
 }
 
 .header .container .wrapper .search {
     font-size: 22px;
-    margin-right: 10px;
+    width: 10%;
+    text-align: end;
 }
 
 .header .container .wrapper .cart {
@@ -102,6 +112,8 @@
     background-color: #1e4808;
     color: white;
     margin-top: 25px;
+    cursor: pointer;
+
 }
 
 .carousel_slider_btn {
@@ -225,6 +237,8 @@
     font-size: 25px;
     background-color: white;
     color: #71956e;
+    cursor: pointer;
+
 }
 
 /* Banner */
@@ -260,6 +274,7 @@
     padding: 8px 22px;
     border: 1.5px solid #50d50a;
     color: #50d50a;
+    cursor: pointer;
     background-color: white;
 }
 
@@ -316,6 +331,13 @@
     margin-right: 25px;
     text-decoration: none;
     font-size: 14px;
+    transition: all 0.25s;
+}
+
+.about .product .product_title nav a:hover {
+    color: #50d50a;
+    border-bottom: 1px solid #50d50a;
+    padding-bottom: 5px;
 }
 
 .about .product .product_list .item .product_img img {
@@ -401,6 +423,7 @@
     color: #71956e;
     background-color: transparent;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .feedback {
@@ -428,6 +451,7 @@
     display: flex;
     width: calc(250px * 8);
     animation: scroll 40s linear infinite;
+    padding: 25px 0;
 }
 
 .slide_track1:hover {
@@ -441,6 +465,7 @@
     animation: scroll 40s linear infinite;
     animation-direction: reverse;
     background-color: transparent;
+    padding: 25px 0;
 
 }
 
@@ -462,6 +487,7 @@
     height: 100%;
     border: white;
     background-color: white;
+    object-fit: cover;
     padding: 5px;
     transition: transform 1s;
 }
@@ -471,6 +497,131 @@
     transform: translateZ(10px);
 }
 
+/* Footer */
+.footer {
+    padding: 5% 0;
+
+}
+
+.footer_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer_list .item h1 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #50d50a;
+}
+
+.footer_list .item ul {
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.footer_list .item p {
+    margin: 15px 0;
+}
+
+.footer_list .item ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.footer_list .item ul li {
+    list-style: none;
+}
+
+.footer_list .item ul li img {
+    width: 45px;
+    margin-top: 5px;
+}
+
+.contact_email {
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
+}
+
+.contact_email .Email_input:focus-visible {
+    border: none;
+    outline: none;
+}
+
+
+
+.contact_email button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.Email_input {
+    border: none;
+    width: 200px;
+}
+
+.card_pay {
+    display: flex;
+}
+
+.card_pay li {
+    margin-right: 10px;
+}
+
+
+
+.footer_list .item:nth-child(5),
+.footer_list .item:nth-child(6) {
+    width: 25%;
+}
+
+.footer_list .item a {
+    transition: all 0.25s;
+}
+
+.footer_list .item a:hover {
+    font-weight: 600;
+    color: brown;
+    font-size: 16px;
+}
+
+.title img {
+    width: 20%;
+}
+
+.title span {
+    font-size: 25px;
+    width: 20px;
+    display: inline-block;
+}
+
+.content_item {
+    width: 90%;
+    padding-left: 8px;
+}
+
+.social_item ul {
+    display: flex;
+}
+
+.social_item ul li {
+    margin-right: 15px;
+
+}
+
+.social_item ul li i {
+    font-size: 22px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.copyright {
+    opacity: 0.5;
+    font-size: 13px;
+}
 
 @keyframes scroll {
     0% {

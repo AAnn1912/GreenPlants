@@ -113,7 +113,15 @@
     color: white;
     margin-top: 25px;
     cursor: pointer;
+    transition: all .5s;
 
+}
+
+.content_left .btn_buyNow:hover {
+    background-color: #88806a;
+    border: #e8e1d6;
+    color: #d0c9bb;
+    border-radius: 25px;
 }
 
 .carousel_slider_btn {
@@ -202,9 +210,9 @@
 }
 
 
-.popular_listsItem .item.item_5 p {
+/* .popular_listsItem .item.item_5 p {
     margin-bottom: 25px;
-}
+} */
 
 
 .popular_listsItem .item h3 {
@@ -213,12 +221,13 @@
 }
 
 .popular_listsItem .item p {
+    width: 100%;
     margin: 0 30px 0 10px;
     font-size: 15px;
     line-height: 1.5;
 }
 
-.popular_listsItem .item .price p {
+.popular_listsItem .item .price div {
     display: inline-block;
     margin: 15px 0 15px 10px;
     color: #71956e;
@@ -233,7 +242,7 @@
 
 .popular_listsItem .item .price .addCart {
     border: none;
-    margin-right: 10%;
+    margin-right: 5%;
     font-size: 25px;
     background-color: white;
     color: #71956e;
@@ -276,6 +285,13 @@
     color: #50d50a;
     cursor: pointer;
     background-color: white;
+    transition: all .25s;
+}
+
+.banner_title button:hover {
+    background-color: #50d50a;
+    color: white;
+    padding: 12px 25px;
 }
 
 .banner_content .banner_img {
@@ -384,7 +400,7 @@
 
 
 .about .product .product_list .item i {
-    color: #50d50a;
+    color: #71956e;
 }
 
 .product_list .item h1 {
@@ -393,7 +409,9 @@
 }
 
 .product_list .item p {
+    width: 100%;
     padding: 5px;
+    height: 68px;
 }
 
 .product_list .item .price {
@@ -402,28 +420,34 @@
     align-items: center;
 }
 
-.product_list .item .price p {
+.product_list .item .price div {
     display: inline-block;
-    margin: 15px 0 15px 0;
+    margin: 15px 0 15px 10px;
     color: #71956e;
     font-weight: 500;
 }
 
 .product_list .item .price .addCart {
     border: none;
-    margin-right: 10%;
+    margin-right: 5%;
     font-size: 25px;
     background-color: white;
     color: #71956e;
 }
 
-.product button {
+.product .product_view {
     padding: 8px 30px;
     border: 1.5px solid #71956e;
     color: #71956e;
     background-color: transparent;
     margin-top: 15px;
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.product .product_view:hover {
+    background-color: #527851;
+    color: white;
 }
 
 .feedback {
